@@ -2,10 +2,18 @@
 using namespace std;
 
 class player{
-     public:
+     private:
      int score;
      int health;
 
+     public:
+
+     void setScore(int s){
+          score = s;
+     }
+     void setHealth(int h){
+          health = h;
+     }
      void showHealth(){
           cout<<"Health is: "<<health<<endl;
      }
@@ -15,8 +23,8 @@ class player{
 };
 int main(){
      player p;
-     p.score = 90;
-     p.health = 100;
+     p.setHealth(100);
      p.showHealth();
+     p.setScore(10); 
      p.showScore(); 
 }
