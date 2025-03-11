@@ -4,21 +4,21 @@ using namespace std;
 class player{  // class definition
      private:  // private access specifier
      int score; // private data member
-     int health; // private data member
+     int health;
 
      public: // public access specifier
 
      void setScore(int s){    // public member function
           score = s;     // accessing private data member
      }
-     void setHealth(int h){   // public member function
-          health = h;    // accessing private data member
+     void setHealth(int h){
+          health = h;   
      }
-     void showHealth(){  // public member function
-          cout<<"Health is: "<<health<<endl; // accessing private data member
+     void showHealth(){  
+          cout<<"Health is: "<<health<<endl; 
      }
-     void showScore(){   // public member function
-          cout<<"Score is: "<<score<<endl; // accessing private data member
+     void showScore(){   
+          cout<<"Score is: "<<score<<endl; 
      }
 };
 int main(){
