@@ -1,30 +1,30 @@
 #include <iostream>
 using namespace std;
 
-class player{
-     private:
-     int score;
-     int health;
+class player{  // class definition
+     private:  // private access specifier
+     int score; // private data member
+     int health; // private data member
 
-     public:
+     public: // public access specifier
 
-     void setScore(int s){
-          score = s;
+     void setScore(int s){    // public member function
+          score = s;     // accessing private data member
      }
-     void setHealth(int h){
-          health = h;
+     void setHealth(int h){   // public member function
+          health = h;    // accessing private data member
      }
-     void showHealth(){
-          cout<<"Health is: "<<health<<endl;
+     void showHealth(){  // public member function
+          cout<<"Health is: "<<health<<endl; // accessing private data member
      }
-     void showScore(){
-          cout<<"Score is: "<<score<<endl;
+     void showScore(){   // public member function
+          cout<<"Score is: "<<score<<endl; // accessing private data member
      }
 };
 int main(){
-     player p;
-     p.setHealth(100);
+     player p; // creating object of class player
+     p.setHealth(100);   // accessing public member function
      p.showHealth();
-     p.setScore(10); 
+     p.setScore(10);    
      p.showScore(); 
 }
