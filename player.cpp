@@ -51,4 +51,4 @@ int main(){
      cout<<p.getAge()<<endl;
      cout<<p.IsAlive()<<endl;
 
-}
+}                                                                                                                         
