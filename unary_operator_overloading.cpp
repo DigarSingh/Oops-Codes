@@ -14,19 +14,25 @@ class Weight {
     void print(){
         cout<<"Weigth in KG: "<<kg<<endl;
     }
-    void operator++(){ //pre
-        ++kg;
+    Weight operator++(){ //pre-increment
+        Weight temp;
+        temp.kg = ++kg;
+        return temp;
     }
-    void operator++(int){  //post
-        kg++;
+    Weight operator++(int){  //post-increment
+        Weight temp;
+        temp.kg = kg++;
+        return temp;
     }
 };
 int main(){
-    Weight obj;
-    obj.print();
-    obj++;
-    obj.print();
-    ++obj;
-    obj.print();
+    Weight obj1,obj2;
+    obj1.print();
+    obj1++;
+    obj1.print();
+    ++obj1;
+    obj1.print();
+    obj2 = ++obj1;
+    obj2.print();
     return 0;
 }
